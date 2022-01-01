@@ -1,26 +1,23 @@
-atom-linter-phpstan
+linter-tlint
 =========================
 
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides
-an interface to [PHPStan](https://github.com/phpstan/phpstan). It will be
+an interface to [tlint](https://github.com/tighten/tlint). It will be
 used with files that have the "PHP" syntax or PHP embedded within HTML.
 
-## Installation
-### PHPStan installation
-Before installing this plugin, you must ensure that `phpstan` is installed on your
-system. For detailed instructions see [PHPStan Github](https://github.com/phpstan/phpstan),
-the simplified steps are:
-
-0. Install [php](http://php.net).
-0. Install [Composer](https://getcomposer.org/download/).
-0. Install `phpstan` by typing the following in a terminal:
+## Requirements
+This plugin requires a working copy of `tlint` to be installed. It can be
+installed globally or locally, within your project.
 ```ShellSession
-composer global require phpstan/phpstan
+# globally
+composer global require tightenco/tlint
+
+# or locally
+composer require tightenco/tlint
 ```
 
-After verifying that `phpstan` works from your terminal, proceed to install the atom-linter-phpstan plugin.
-
 ### Plugin installation
+Either through the Atom settings UI, or via the command line:
 ```ShellSession
-$ apm install atom-linter-phpstan
+$ apm install linter-tlint
 ```
