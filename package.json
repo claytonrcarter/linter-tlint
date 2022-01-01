@@ -54,5 +54,8 @@
       "description": "Disable the linter when the config file is not found.",
       "order": 3
     }
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
   }
 }
